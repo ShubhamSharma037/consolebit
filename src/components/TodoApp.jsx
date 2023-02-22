@@ -8,7 +8,7 @@ const TodoApp = () => {
 
     const addTodo = (event)=>{
         event.preventDefault()
-        if(inputRef.current.value.length >=1){
+        if(inputRef.current.value.trim().length >=1){
             const newtodos = [
                 ...todos,
                 {
