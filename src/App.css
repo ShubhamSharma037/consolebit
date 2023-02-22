@@ -1,0 +1,27 @@
+html{
+  font-size: 1rem;  
+}
+*{
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  padding: 1rem;
+  /* align-items: center; */
+  justify-content: center;
+  /* height : 100vh; */
+  /* width: 100vw; */
+}
+
+
+@media (min-width: 576px) {
+  html { font-size: 0.5rem; }
+}
+@media (min-width: 768px) {
+  html { font-size: 0.6rem; }
+}
+@media (min-width: 992px) {
+  html { font-size: 0.8rem; }
+}
+
