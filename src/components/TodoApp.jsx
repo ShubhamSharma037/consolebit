@@ -8,15 +8,17 @@ const TodoApp = () => {
 
     const addTodo = (event)=>{
         event.preventDefault()
-        const newtodos = [
-            ...todos,
-            {
-                task : inputRef.current.value,
-                isDone : false,
-            }
-        ]
-        setTodos(newtodos)
-        inputRef.current.value=''
+        if(inputRef.current.value.length >=1){
+            const newtodos = [
+                ...todos,
+                {
+                    task : inputRef.current.value,
+                    isDone : false,
+                }
+            ]
+            setTodos(newtodos)
+            inputRef.current.value=''
+        }
     }
 
     const markTodo = (index)=>{
